@@ -1,0 +1,87 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/aldo/bin:/home/aldo/.npm-global/bin:/home/aldo/Android/Sdk/emulator:/home/aldo/Android/Sdk/tools:/home/aldo/Android/Sdk/tools/bin:/home/aldo/Android/Sdk/platform-tools:/home/aldo/android-studio/bin:/home/aldo/bin:/home/aldo/.npm-global/bin:/home/aldo/Android/Sdk/emulator:/home/aldo/Android/Sdk/tools:/home/aldo/Android/Sdk/tools/bin:/home/aldo/Android/Sdk/platform-tools:/home/aldo/android-studio/bin:/home/aldo/bin:/home/aldo/.npm-global/bin:/home/aldo/Android/Sdk/emulator:/home/aldo/Android/Sdk/tools:/home/aldo/Android/Sdk/tools/bin:/home/aldo/Android/Sdk/platform-tools:/home/aldo/android-studio/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/aldo/Documentos/Rework/ong-anf-back-type/package.json: Unexpected token , in JSON at position 219
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "ong-anf-back-type",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/M4ster3001/ong-anf-back-type.git",
+    "author": "M4ster3001 <aldocfjunior@gmail.com>",
+    "license": "MIT"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "typeorm:run": "ts-node-dev ./node_modules/typeorm/cli.js migration:run",
+    "typeorm:rvt": "ts-node-dev ./node_modules/typeorm/cli.js migration:revert",
+    "typeorm:ct": "ts-node-dev ./node_modules/typeorm/cli.js migration:create -n"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.8",
+    "@types/date-fns": "^2.6.0",
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.14.6",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "ts-node-dev": "^1.0.0",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "body-parser": "^1.19.0",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "pm2": "^4.4.0",
+    "read-excel-file": "^4.0.6",
+    "aws-sdk": "^2.693.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "date-fns": "^2.16.1",
+    "express": "^4.17.1",
+    "pg": "^8.4.2",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.29",
+    "uuidv4": "^6.2.4"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
